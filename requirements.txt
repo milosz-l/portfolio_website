@@ -1,4 +1,4 @@
-Pillow==9.4.0
-requests==2.28.1
-streamlit==1.14.0
-streamlit_lottie==0.0.3
+Pillow
+requests
+streamlit
+streamlit_lottie
