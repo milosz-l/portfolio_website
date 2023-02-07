@@ -5,7 +5,7 @@ from PIL import Image
 
 
 # page config
-st.set_page_config(page_title="Milosz Lopatto", page_icon=":notebook_with_decorative_cover:", layout="wide")
+st.set_page_config(page_title="Milosz Lopatto", page_icon="💡", layout="wide")
 
 # load assets
 def load_lottieurl(url):
@@ -33,9 +33,16 @@ with st.container():
     text_column, image_column = st.columns((2, 1))
     with text_column:
         st.title("Computer Science student @ Warsaw University of Technology")
-        st.info("I'm a third year student majoring in Computer Science. My specialization is Artificial Intelligence. I'm a Machine Learning and Data Science enthusiast.")
+        st.write(
+            """
+            I am a highly motivated third-year Computer Science student specializing in Artificial Intelligence. I have a strong passion for Machine Learning and Data Science and am constantly seeking new opportunities to apply my knowledge and skills in these areas. With a drive to continuously improve and learn, I am eager to take on new challenges and create impactful solutions in the field of AI.
+            """
+        )
     with image_column:
         st.image(face_image)
+
+# lottie
+st_lottie(data_visualization_lottie, height=600, key="data_visualization")
 
 # experience
 with st.container():
@@ -44,7 +51,7 @@ with st.container():
     left_column, right_column = st.columns((2, 1))
     with left_column:
         st.subheader('Data Analytics internship at Continental')
-        st.caption('Jul 2022 - Sep 2022')
+        st.caption('Jul 2022 - Sep 2022, Hanover, Germany')
         st.write(
             """
             - Analysis and improvement of the chatbot and the corresponding NLP Machine Learning model.
@@ -63,10 +70,6 @@ with st.container():
     with right_column:
         st.image(conti_logo_image)
 
-# lottie
-st_lottie(data_visualization_lottie, height=600, key="data_visualization")
-
-
 # education
 with st.container():
     st.write("---")
@@ -74,7 +77,7 @@ with st.container():
     left_column, right_column = st.columns((2, 1))
     with left_column:
         st.subheader('Warsaw University of Technology')
-        st.caption('2020 - Present')
+        st.caption('2020 - Present, Warsaw, Poland')
         st.write(
             """
             - Major in Computer Science (Artificial Intelligence specialization)
@@ -89,36 +92,37 @@ with st.container():
         st.image(wut_logo_image)
 
 # skills and other
+def skills_row(a, b):
+  col1, col2 = st.columns([1,2])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+
 with st.container():
     st.write("---")
-    st.header("Skills & other")
-    st.markdown(
-        """
-        ### Programming lanugages
-        - `Python` (`Pandas`, `SciKit-Learn`, `PyTorch`, `HuggingFace`, `Streamlit`, `Matplotlib`, `Seaborn`, `Plotly`, `spaCy`)
-        - `Swift`
-        - `C++`
-        - `C`
-
-        ### Other tools
-        - `Microsoft Power BI`
-        - `SQL`
-        - `Git`
-
-        ### Languages
-        - English
-        - Polish (native)
-        """
-    )
+    st.header("Skills")
+    skills_row('Programming', '`Python`, `C`, `C++`, `Swift`, `Git`')
+    skills_row('Data processing', '`SQL`, `pandas`, `numpy`')
+    skills_row('Data visualization', '`Microsoft Power BI`, `matplotlib`, `seaborn`, `plotly`')
+    skills_row('Machine Learning', '`scikit-learn`')
+    skills_row('Deep Learning', '`pytorch`, `huggingface`')
+    skills_row('Natural Language Processing (NLP)', '`spaCy`')
+    skills_row('Web development', '`Django`, `HTML`, `CSS`')
+    skills_row('Model deployment', '`streamlit`, `Heroku`')
+    skills_row('Agile', '`Jira`, `Confluence`')
+    skills_row('Languages', '`English`, `Polish (native)`')
 
 # socials
 with st.container():
     st.write("---")
     st.header("Socials")
-    st.markdown("""
-    - [linkedin](https://www.linkedin.com/in/milosz-lopatto/)
-    - [github](https://github.com/milosz-l)
-    """)
+    st.markdown(
+        """
+        - [linkedin](https://www.linkedin.com/in/milosz-lopatto/)
+        - [github](https://github.com/milosz-l)
+        """
+    )
 
 # contact
 with st.container():
