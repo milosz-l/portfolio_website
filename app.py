@@ -13,7 +13,8 @@ def load_lottieurl(url):
     if r.status_code != 200:
         return None
     return r.json()
-data_visualization_lottie = load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_ps1145pz.json")
+data_visualization_lottie = load_lottieurl('https://assets9.lottiefiles.com/private_files/lf30_ps1145pz.json')
+mail_lottie = load_lottieurl('https://assets8.lottiefiles.com/packages/lf20_kdx6cani.json')
 face_image = Image.open("images/face.jpg")
 conti_logo_image = Image.open("images/conti_logo.png")
 wut_logo_image = Image.open("images/wut_logo.png")
@@ -136,4 +137,4 @@ with st.container():
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
-        st.empty()
+        st_lottie(mail_lottie, height=400, key="mail")
