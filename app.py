@@ -33,7 +33,7 @@ with st.container():
     text_column, image_column = st.columns((2, 1))
     with text_column:
         st.title("Computer Science student @ Warsaw University of Technology")
-        st.write("I'm a third year student majoring in Computer Science. My specialization is Artificial Intelligence. I'm a Machine Learning and Data Science enthusiast.")
+        st.info("I'm a third year student majoring in Computer Science. My specialization is Artificial Intelligence. I'm a Machine Learning and Data Science enthusiast.")
     with image_column:
         st.image(face_image)
 
