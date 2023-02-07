@@ -108,7 +108,7 @@ with st.container():
     skills_row('Machine Learning', '`scikit-learn`')
     skills_row('Deep Learning', '`pytorch`, `huggingface`')
     skills_row('Natural Language Processing (NLP)', '`spaCy`')
-    skills_row('Model deployment', '`streamlit`, `Heroku`')
+    skills_row('Model deployment', '`streamlit`')
     skills_row('Web development', '`HTML`, `CSS`')
     skills_row('Agile', '`Jira`, `Confluence`')
     skills_row('Languages', '`English`, `Polish (native)`')
