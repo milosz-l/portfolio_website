@@ -49,15 +49,15 @@ with st.container():
             """
             - Analysis and improvement of the chatbot and the corresponding NLP Machine Learning model.
                 - Performed exploratory analysis of chatbot conversations data. Found an error in database - almost 20% of classifier predictions haven’t been logged in the database.
-                - Built a Power BI report that allowed for measuring the performance of the NLP Machine Learning model and created detailed documentation in Confluence.
+                - Built a `Power BI` report that allowed for measuring the performance of the NLP Machine Learning model and created detailed documentation in `Confluence`.
                 - Presented the results to the management.
                 - Retrained the model on new data (improved accuracy by 6%).
-                - Created a Sankey diagram with Python that shows the flow of users' conversations with the chatbot.
+                - Created a Sankey diagram with `Python` that shows the flow of users' conversations with the chatbot.
                 - Developed an NLP machine learning model to automate manual classification of inputs that the chatbot failed to answer.
-            - Supported the Power BI reports migration project.
-                - Managed reports in Power BI Service and optimized their performance.
-                - Worked with Data Vault 2.0 methodology using Matillion ELT software.
-            - Worked with Scrum methodology using Jira.
+            - Supported the `Power BI` reports migration project.
+                - Managed reports in `Power BI Service` and optimized their performance.
+                - Worked with `Data Vault 2.0` methodology using `Matillion ELT` software.
+            - Worked with `Scrum` methodology using `Jira`.
             """
         )
     with right_column:
@@ -82,7 +82,7 @@ with st.container():
             - Took first place in a competition during the Artificial Neural Networks course
                 - The projects were related to: Convolutional Neural Networks (CNN), Transformers, Generative Adversarial Networks (GAN), Recurrent Neural Networks (RNN) and Natural Language Processing (NLP)
             - Got to know in practice how to build Machine Learning models (including steps like data cleaning, data visualization, feature selection, feature engineering, hyperparameters tuning and more)
-            - Currently building an AutoML app in Streamlit
+            - Currently building an AutoML app in `Streamlit`
             """
         )
     with right_column:
@@ -95,15 +95,15 @@ with st.container():
     st.markdown(
         """
         ### Programming lanugages
-        - Python (Pandas, SciKit-Learn, PyTorch, HuggingFace, Streamlit, Matplotlib, Seaborn, Plotly, spaCy)
-        - Swift
-        - C++
-        - C
+        - `Python` (`Pandas`, `SciKit-Learn`, `PyTorch`, `HuggingFace`, `Streamlit`, `Matplotlib`, `Seaborn`, `Plotly`, `spaCy`)
+        - `Swift`
+        - `C++`
+        - `C`
 
         ### Other tools
-        - Microsoft Power BI
-        - SQL
-        - Git
+        - `Microsoft Power BI`
+        - `SQL`
+        - `Git`
 
         ### Languages
         - English

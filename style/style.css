@@ -50,3 +50,7 @@ footer {
 header {
     visibility: hidden;
 }
+
+img {
+    border-radius: 15px;
+}
