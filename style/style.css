@@ -51,6 +51,12 @@ header {
     visibility: hidden;
 }
 
+/* add rounded corners to images */
 img {
     border-radius: 10px;
+}
+
+/* hide hosted with streamlit */
+.viewerBadge_container__1QSob {
+    visibility: hidden;
 }
