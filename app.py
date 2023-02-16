@@ -109,7 +109,7 @@ with st.container():
     skills_row('Deep Learning', '`pytorch`, `huggingface`')
     skills_row('Natural Language Processing (NLP)', '`spaCy`')
     skills_row('Model deployment', '`streamlit`')
-    skills_row('Web development', '`HTML`, `CSS`')
+    skills_row('Web development', '`Django`, `HTML`, `CSS`')
     skills_row('Agile', '`Jira`, `Confluence`')
     skills_row('Languages', '`English`, `Polish (native)`')
 
