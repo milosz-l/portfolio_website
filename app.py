@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
+import base64
+import  streamlit_toggle as tog
 
 
 # page config
@@ -41,8 +43,14 @@ with st.container():
     with image_column:
         st.image(face_image)
 
-# lottie
+# load lottie
 st_lottie(data_visualization_lottie, height=600, key="data_visualization")
+
+# load testimonial pdf
+with open("testimonial.pdf", "rb") as f:
+    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+pdf_display_testimonial = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+
 
 # experience
 with st.container():
@@ -67,6 +75,16 @@ with st.container():
             - Worked with `Scrum` methodology using `Jira`.
             """
         )
+        testimonial_toggle = tog.st_toggle_switch(label="show testimonial", 
+                                                    key="testimonial", 
+                                                    default_value=False, 
+                                                    label_after = True, 
+                                                    inactive_color = '#D3D3D3', 
+                                                    active_color="#11567f", 
+                                                    track_color="#29B5E8"
+                                                 )
+        if testimonial_toggle:
+            st.markdown(pdf_display_testimonial, unsafe_allow_html=True)
     with right_column:
         st.image(conti_logo_image)
 
