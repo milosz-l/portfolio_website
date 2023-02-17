@@ -67,7 +67,7 @@ with st.container():
             - Worked with `Scrum` methodology using `Jira`.
             """
         )
-    st.write("[link to testimonial](https://drive.google.com/file/d/19cWLrcdJAi5yX3bFayMDaCXf7Se77A9C/view?usp=sharing)")
+    st.write("[testimonial](https://drive.google.com/file/d/19cWLrcdJAi5yX3bFayMDaCXf7Se77A9C/view?usp=sharing)")
     with right_column:
         st.image(conti_logo_image)
 
