@@ -2,8 +2,6 @@ import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
-import base64
-
 
 # page config
 st.set_page_config(page_title="Milosz Lopatto", page_icon="💡", layout="wide")
@@ -45,11 +43,6 @@ with st.container():
 # load lottie
 st_lottie(data_visualization_lottie, height=600, key="data_visualization")
 
-# load testimonial pdf
-with open("files/testimonial.pdf", "rb") as f:
-    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-pdf_display_testimonial = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-
 
 # experience
 with st.container():
@@ -74,7 +67,7 @@ with st.container():
             - Worked with `Scrum` methodology using `Jira`.
             """
         )
-    st.markdown(pdf_display_testimonial, unsafe_allow_html=True)
+    st.write("[link to testimonial](https://drive.google.com/file/d/19cWLrcdJAi5yX3bFayMDaCXf7Se77A9C/view?usp=sharing)")
     with right_column:
         st.image(conti_logo_image)
 
