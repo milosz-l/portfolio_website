@@ -3,7 +3,6 @@ import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
 import base64
-import  streamlit_toggle as tog
 
 
 # page config
@@ -75,16 +74,7 @@ with st.container():
             - Worked with `Scrum` methodology using `Jira`.
             """
         )
-        testimonial_toggle = tog.st_toggle_switch(label="show testimonial", 
-                                                    key="testimonial", 
-                                                    default_value=False, 
-                                                    label_after = True, 
-                                                    inactive_color = '#09ab3c', 
-                                                    active_color="#F6A639", 
-                                                    track_color="#fed337"
-                                                 )
-        if testimonial_toggle:
-            st.markdown(pdf_display_testimonial, unsafe_allow_html=True)
+    st.markdown(pdf_display_testimonial, unsafe_allow_html=True)
     with right_column:
         st.image(conti_logo_image)
 
