@@ -20,7 +20,7 @@ mail_lottie = load_lottieurl('https://assets8.lottiefiles.com/packages/lf20_kdx6
 face_image = Image.open("images/face.jpg")
 conti_logo_image = Image.open("images/conti_logo.png")
 wut_logo_image = Image.open("images/wut_logo.png")
-with open("email.txt", "r") as file:
+with open("files/email.txt", "r") as file:
     email = file.read()
 
 # use style.css
@@ -47,7 +47,7 @@ with st.container():
 st_lottie(data_visualization_lottie, height=600, key="data_visualization")
 
 # load testimonial pdf
-with open("testimonial.pdf", "rb") as f:
+with open("files/testimonial.pdf", "rb") as f:
     base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 pdf_display_testimonial = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
 
