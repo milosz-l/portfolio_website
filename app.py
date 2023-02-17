@@ -79,9 +79,9 @@ with st.container():
                                                     key="testimonial", 
                                                     default_value=False, 
                                                     label_after = True, 
-                                                    inactive_color = '#D3D3D3', 
-                                                    active_color="#11567f", 
-                                                    track_color="#29B5E8"
+                                                    inactive_color = '#09ab3c', 
+                                                    active_color="#F6A639", 
+                                                    track_color="#fed337"
                                                  )
         if testimonial_toggle:
             st.markdown(pdf_display_testimonial, unsafe_allow_html=True)
