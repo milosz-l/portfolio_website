@@ -91,6 +91,41 @@ with st.container():
     with right_column:
         st.image(wut_logo_image)
 
+# projects
+with st.container():
+    st.write("---")
+    st.header("Projects")
+    left_column, right_column = st.columns((2, 1))
+    with left_column:
+        st.subheader('Predicting the delivery time of packages')
+        st.write(
+            """
+            - [Link to notebook](https://github.com/milosz-l/delivery-time/blob/master/data_analysis.ipynb)
+            - Got to know in practice how to build Machine Learning models, including steps like:
+                - data cleaning
+                - EDA
+                - data visualization
+                - feature selection
+                - feature engineering
+                - etc.
+            """
+        )
+        st.subheader('AutoML app in Streamlit')
+        st.write(
+            """
+            - Work in progress as part of an engineering thesis.
+            """
+        )
+        st.subheader('GymNote - workout tracker app in SwiftUI')
+        st.write(
+            """
+            - Work in progress.
+            - A hobby project that I intend to release on the App Store at some point.
+            """
+        )
+    with right_column:
+        st.empty()
+
 # skills and other
 def skills_row(a, b):
   col1, col2 = st.columns([1,2])
