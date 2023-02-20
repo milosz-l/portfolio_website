@@ -85,8 +85,6 @@ with st.container():
             - Current GPA: 4,01 (scale: 2-5)
             - Took first place in a competition during the Artificial Neural Networks course
                 - The projects were related to: Convolutional Neural Networks (CNN), Transformers, Generative Adversarial Networks (GAN), Recurrent Neural Networks (RNN) and Natural Language Processing (NLP)
-            - Got to know in practice how to build Machine Learning models (including steps like data cleaning, data visualization, feature selection, feature engineering, hyperparameters tuning and more)
-            - Currently building an AutoML app in `Streamlit`
             """
         )
     with right_column:
