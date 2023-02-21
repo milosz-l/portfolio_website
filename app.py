@@ -101,11 +101,13 @@ with st.container():
             """
             - [Link to notebook](https://github.com/milosz-l/delivery-time/blob/master/data_analysis.ipynb)
             - Got to know in practice how to build Machine Learning models, including steps like:
+                - determining business objectives with the client
                 - data cleaning
                 - EDA
                 - data visualization
                 - feature selection
                 - feature engineering
+                - deployment of the model as a microservice
                 - etc.
             """
         )
